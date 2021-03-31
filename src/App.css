@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+body {
+  background-color: #020202;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+    font-family: "Montserrat";
+    font-weight: 100;
+    color: #f0f0f0;
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page-heading{
+    text-align: center;
+    font-size: 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+hr{
+    width: 80vw;
 }
 
-.App-link {
-  color: #61dafb;
+.title-section{
+    padding-top: 60vh;
+    padding-bottom: 20vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#turtle{
+    position: relative;
+    width: 1200px;
+}
+
+#statue{
+    width: 800px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    margin-top: 10rem;
+}
+
+#flower{
+    width: 600px;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    margin-top: 600px;
+    z-index: 1;
+}
+
+#sitting{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #1f1f1f;
+}
+
+#boy{
+    width: 1000px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    margin-top: 1600px;
+}
+
+#sitting2{
+    width: 800px;
+    position: relative;
+    left: 100px;
+    top: -150px;
+    z-index: 2;
+    margin-top: 300px;
+}
+
+#forest{
+    width: 100%;
+    position: relative;
+    z-index: 0;
 }
