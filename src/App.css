@@ -10,6 +10,10 @@ h1 {
   margin: 0;
 }
 
+.heading-container{
+  height: 20vh;
+}
+
 .page-heading {
   text-align: center;
   font-size: 5rem;
@@ -120,10 +124,11 @@ p {
   font-family: "Montserrat";
   color: black;
   position: absolute;
+  right: -0.5em;
+    bottom: 2.5em;
   font-size: 10rem;
   z-index: 1;
   -webkit-text-stroke: 2px white;
-  display: inline;
   margin: 0;
   transform: rotate(90deg);
   transition: 1s;
@@ -137,6 +142,81 @@ p:hover{
 
 .footer-padding{
   height: 5vh;
+}
+
+@media (max-width: 1440px){
+  #umbrella{
+    margin-top: 0;
+  }
+
+  #mountain{
+    margin-top: 50vh;
+  }
+  
+  p{
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 1024px){
+  .page-heading{
+    font-size: 3rem;
+  }
+
+  #turtle{
+    margin-top: 20vh;
+  }
+
+  #boy{
+     margin-top: 140vh;
+  }
+
+  #mountain{
+    margin-top: 60vh;
+  }
+
+  p{
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px){
+  .page-heading{
+    font-size: 2.5rem;
+  }
+
+  #turtle{
+    margin-top: 0;
+  }
+
+  #statue{
+    margin-top: 0;
+  }
+
+  #flower{
+    margin-top: 32vh;
+  }
+
+  #boy{
+    margin-top: 70vh;
+  }
+
+  #sitting2{
+    top: -10vh;
+    margin-top: 20vh;
+  }
+
+  #umbrella{
+    margin-top: 4vh;
+  }
+
+  #mountain{
+    margin-top: 30vh;
+  }
+
+  p{
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 480px){
