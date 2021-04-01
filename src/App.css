@@ -3,80 +3,177 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
 }
 
-h1{
-    font-family: "Montserrat";
-    font-weight: 100;
-    color: #f0f0f0;
-    margin: 0;
+h1 {
+  font-family: "Montserrat";
+  font-weight: 100;
+  color: #f0f0f0;
+  margin: 0;
 }
 
-.page-heading{
-    text-align: center;
-    font-size: 5rem;
+.page-heading {
+  text-align: center;
+  font-size: 5rem;
 }
 
-hr{
-    width: 80vw;
+hr {
+  width: 80vw;
 }
 
-.title-section{
-    padding-top: 60vh;
-    padding-bottom: 20vh;
+.title-section {
+  padding-top: 60vh;
+  padding-bottom: 20vh;
 }
 
-#turtle{
-    position: relative;
-    width: 1200px;
+#turtle {
+  position: relative;
+  width: 62.5vw;
 }
 
-#statue{
-    width: 800px;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    margin-top: 10rem;
+#statue {
+  width: 41.67vw;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  margin-top: 11vh;
 }
 
-#flower{
-    width: 600px;
-    transform: rotate(180deg);
-    position: absolute;
-    left: 0;
-    margin-top: 600px;
-    z-index: 1;
+#flower {
+  width: 31.25vw;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 15vw;;
+  margin-top: 64vh;
+  z-index: 1;
 }
 
-#sitting{
-    width: 100%;
-    position: relative;
-    z-index: 0;
+#sitting {
+  width: 100%;
+  position: relative;
+  z-index: 0;
 }
 
-img{
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px #1f1f1f;
+img {
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px #1f1f1f;
 }
 
-#boy{
-    width: 1000px;
-    height: auto;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    margin-top: 1600px;
+#boy {
+  width: 52.08vw;
+  height: auto;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  margin-top: 170vh;
 }
 
-#sitting2{
-    width: 800px;
-    position: relative;
-    left: 100px;
-    top: -150px;
-    z-index: 2;
-    margin-top: 300px;
+#sitting2 {
+  width: 46.87vw;
+  position: relative;
+  left: 5.2vw;
+  top: -16vh;
+  z-index: 2;
+  margin-top: 32vh;
 }
 
-#forest{
-    width: 100%;
-    position: relative;
-    z-index: 0;
+#forest {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+#collection-2 {
+  position: relative;
+}
+
+#umbrella {
+  width: 62.5vw;
+  position: relative;
+  z-index: 1;
+  margin-top: 21.34vh;
+}
+
+#section3 {
+  position: relative;
+}
+
+#mountain {
+  width: 46.87vw;
+  position: absolute;
+  right: 0;
+  margin-top: 106.72vh;
+}
+
+#building {
+  width: 57.29vw;
+  position: relative;
+  left: 5.2vw;
+  z-index: -1;
+  display: inline;
+}
+
+#footer{
+  width: 100%;
+  position: relative;
+}
+
+p {
+  font-family: "Montserrat";
+  color: black;
+  position: absolute;
+  font-size: 10rem;
+  z-index: 1;
+  -webkit-text-stroke: 2px white;
+  display: inline;
+  margin: 0;
+  transform: rotate(90deg);
+  transition: 1s;
+}
+
+p:hover{
+  -webkit-text-stroke: 0px;
+  color: white;
+  transition: 1s;
+}
+
+.footer-padding{
+  height: 5vh;
+}
+
+@media (max-width: 480px){
+  .page-heading{
+    font-size: 1rem;
+  }
+
+  #statue{
+    margin-top: 0;
+  }
+  
+  #flower{
+    margin-top: 15vh;
+  }
+
+  #sitting2{
+    top: -8vh;
+    margin-top: 16vh;
+  }
+
+  #boy{
+    margin-top: 30vh;
+    width: 60vw;
+  }
+
+  #umbrella{
+    margin-top: 0;
+  }
+
+  #mountain{
+    margin-top: 15vh;
+  }
+
+  p{
+    font-size: 2rem;
+    right: -0.5em;
+    bottom: 2.5em;
+    -webkit-text-stroke: 1px white;
+  }
 }
