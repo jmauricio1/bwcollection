@@ -10,7 +10,7 @@ h1 {
   margin: 0;
 }
 
-.heading-container{
+.heading-container {
   height: 20vh;
 }
 
@@ -45,7 +45,7 @@ hr {
   width: 31.25vw;
   transform: rotate(180deg);
   position: absolute;
-  left: 15vw;;
+  left: 15vw;
   margin-top: 64vh;
   z-index: 1;
 }
@@ -115,142 +115,157 @@ img {
   display: inline;
 }
 
-#footer{
+#footer {
   width: 100%;
   position: relative;
 }
 
-p {
+a {
   font-family: "Montserrat";
   color: black;
   position: absolute;
   right: -0.5em;
-    bottom: 2.5em;
+  bottom: 25vh;
   font-size: 10rem;
-  z-index: 1;
+  z-index: 3;
   -webkit-text-stroke: 2px white;
   margin: 0;
   transform: rotate(90deg);
-  transition: 1s;
+  transition: 2s ease;
 }
 
-p:hover{
-  -webkit-text-stroke: 0px;
+a:hover {
   color: white;
   transition: 1s;
+  cursor: pointer;
 }
 
-.footer-padding{
+.about-page {
+  position: fixed;
+  width: 0;
+  height: 105vh;
+  background-color: whitesmoke;
+
+  transition: 3s;
+  background-position: left top;
+  -webkit-transition: width 1s ease-in-out;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+
+.footer-padding {
   height: 5vh;
 }
 
-@media (max-width: 1440px){
-  #umbrella{
+@media (max-width: 1440px) {
+  #umbrella {
     margin-top: 0;
   }
 
-  #mountain{
+  #mountain {
     margin-top: 50vh;
   }
-  
-  p{
+
+  a {
     font-size: 7rem;
   }
 }
 
-@media (max-width: 1024px){
-  .page-heading{
+@media (max-width: 1024px) {
+  .page-heading {
     font-size: 3rem;
   }
 
-  #turtle{
+  #turtle {
     margin-top: 20vh;
   }
 
-  #boy{
-     margin-top: 140vh;
+  #boy {
+    margin-top: 140vh;
   }
 
-  #mountain{
+  #mountain {
     margin-top: 60vh;
   }
 
-  p{
+  a {
     font-size: 4rem;
   }
 }
 
-@media (max-width: 768px){
-  .page-heading{
+@media (max-width: 768px) {
+  .page-heading {
     font-size: 2.5rem;
   }
 
-  #turtle{
+  #turtle {
     margin-top: 0;
   }
 
-  #statue{
+  #statue {
     margin-top: 0;
   }
 
-  #flower{
+  #flower {
     margin-top: 32vh;
   }
 
-  #boy{
+  #boy {
     margin-top: 70vh;
   }
 
-  #sitting2{
+  #sitting2 {
     top: -10vh;
     margin-top: 20vh;
   }
 
-  #umbrella{
+  #umbrella {
     margin-top: 4vh;
   }
 
-  #mountain{
+  #mountain {
     margin-top: 30vh;
   }
 
-  p{
+  a {
     font-size: 4rem;
   }
 }
 
-@media (max-width: 480px){
-  .page-heading{
+@media (max-width: 480px) {
+  .page-heading {
     font-size: 1rem;
   }
 
-  #statue{
+  #statue {
     margin-top: 0;
   }
-  
-  #flower{
+
+  #flower {
     margin-top: 15vh;
   }
 
-  #sitting2{
+  #sitting2 {
     top: -8vh;
     margin-top: 16vh;
   }
 
-  #boy{
+  #boy {
     margin-top: 30vh;
     width: 60vw;
   }
 
-  #umbrella{
+  #umbrella {
     margin-top: 0;
   }
 
-  #mountain{
+  #mountain {
     margin-top: 15vh;
   }
 
-  p{
+  a {
     font-size: 2rem;
     right: -0.5em;
     bottom: 2.5em;

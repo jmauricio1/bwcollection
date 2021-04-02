@@ -43,3 +43,9 @@ window.addEventListener("scroll", (e) => {
     }
   }
 });
+
+// window.onload = () =>{
+//   document.querySelector(".about").addEventListener("click", function(){
+//     document.querySelector(".about-page").style.width = "100%";
+//   });
+// }
