@@ -9,10 +9,10 @@ import linesLeft from './../shapes/lines left.svg';
 function Collection2(){
     return(
         <section className="sections">
-            <img id="boy" className="scroll position-absolute" src={boy} data-rate="-0.6"/>
-            <img id="sitting2" className="scroll" src={sitting2} />
-            <img id="lines-left" className="position-absolute shape" src={linesLeft} />
-            <img id="forest" src={forest}/>
+            <img id="boy" className="scroll position-absolute" src={boy} alt="" data-rate="-0.6"/>
+            <img id="sitting2" className="scroll" src={sitting2} alt="" />
+            <img id="lines-left" className="position-absolute shape" src={linesLeft} alt="" />
+            <img id="forest" src={forest} alt=""/>
         </section>
     )
 }

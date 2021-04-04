@@ -23,7 +23,7 @@ function About(){
           <ArtistList />
         </div>
       </div>
-      <a
+      <p
         className="about position-absolute"
         style={{
           WebkitTextStroke: showAbout ? "2px black" : "2px white",
@@ -32,7 +32,7 @@ function About(){
         onClick={handleAboutClick}
       >
         ABOUT
-      </a>
+      </p>
     </div>
   )
 }

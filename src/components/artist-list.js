@@ -17,6 +17,7 @@ function ArtistList() {
           />
         );
       })}
+      <i>Composed and Website Developed by <b>JOSHUA MAURICIO</b></i>
     </p>
   );
 }
