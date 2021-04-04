@@ -1,10 +1,10 @@
 body {
   background-color: #020202;
   background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
+  font-family: "Montserrat";
 }
 
 h1 {
-  font-family: "Montserrat";
   font-weight: 100;
   color: #f0f0f0;
   margin: 0;
@@ -12,10 +12,10 @@ h1 {
 
 .heading-container {
   height: 20vh;
+  text-align: center;
 }
 
 .page-heading {
-  text-align: center;
   font-size: 5rem;
 }
 
@@ -26,6 +26,34 @@ hr {
 .title-section {
   padding-top: 60vh;
   padding-bottom: 20vh;
+}
+
+.heading-container .fas {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.heading-container p {
+  color: white;
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0.25;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 0.25;
+    transform: translateY(0);
+  }
 }
 
 #turtle {
@@ -58,7 +86,7 @@ hr {
 
 img {
   border-radius: 10px;
-  box-shadow: 5px 5px 20px #1f1f1f;
+  /* box-shadow: 5px 5px 20px #1f1f1f; */
 }
 
 #boy {
@@ -120,11 +148,11 @@ img {
   position: relative;
 }
 
-a {
+.about {
   font-family: "Montserrat";
   color: black;
   position: absolute;
-  right: -0.5em;
+  right: -0.5rem;
   bottom: 25vh;
   font-size: 10rem;
   z-index: 3;
@@ -134,7 +162,7 @@ a {
   transition: 2s ease;
 }
 
-a:hover {
+.about:hover {
   color: white;
   transition: 1s;
   cursor: pointer;
@@ -154,6 +182,29 @@ a:hover {
   z-index: 2;
 }
 
+.about-info {
+  position: absolute;
+  width: 80vw;
+  bottom: 20vh;
+  padding-left: 1rem;
+}
+
+.about-info p {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.about-info a {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  -webkit-transition: 1s ease;
+}
+
+.about-info a:hover {
+  text-decoration: underline overline line-through;
+  color: grey;
+}
 
 .footer-padding {
   height: 5vh;
@@ -168,7 +219,7 @@ a:hover {
     margin-top: 50vh;
   }
 
-  a {
+  .about {
     font-size: 7rem;
   }
 }
@@ -190,8 +241,15 @@ a:hover {
     margin-top: 60vh;
   }
 
-  a {
+  .about {
     font-size: 4rem;
+  }
+}
+
+@media (max-width: 812px) {
+  .about-info p {
+    font-size: 2rem;
+    line-height: 2rem;
   }
 }
 
@@ -229,8 +287,13 @@ a:hover {
     margin-top: 30vh;
   }
 
-  a {
+  .about {
     font-size: 4rem;
+  }
+
+  .about-info p {
+    font-size: 1rem;
+    line-height: 1rem;
   }
 }
 
@@ -265,7 +328,7 @@ a:hover {
     margin-top: 15vh;
   }
 
-  a {
+  .about {
     font-size: 2rem;
     right: -0.5em;
     bottom: 2.5em;
