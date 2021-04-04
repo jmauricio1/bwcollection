@@ -8,19 +8,12 @@ h1 {
   font-weight: 100;
   color: #f0f0f0;
   margin: 0;
+  font-size: 5rem;
 }
 
 .heading-container {
   height: 20vh;
   text-align: center;
-}
-
-.page-heading {
-  font-size: 5rem;
-}
-
-hr {
-  width: 80vw;
 }
 
 .title-section {
@@ -35,6 +28,10 @@ hr {
   animation-name: bounce;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+}
+
+.scroll-name{
+  font-size: 2rem;
 }
 
 .heading-container p {
@@ -295,6 +292,10 @@ img {
     font-size: 1rem;
     line-height: 1rem;
   }
+
+  .heading-container .fas{
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -333,5 +334,9 @@ img {
     right: -0.5em;
     bottom: 2.5em;
     -webkit-text-stroke: 1px white;
+  }
+
+  .scroll-name{
+    font-size: .75rem;
   }
 }

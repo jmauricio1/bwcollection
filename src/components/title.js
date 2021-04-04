@@ -5,8 +5,8 @@ function Title() {
     <section className="title-section">
       <div className="heading-container">
         <h1 className="page-heading">the black and white collection</h1>
-        <p><i>scroll</i></p>
-        <i class="fas fa-caret-down"></i>
+        <p><i className="scroll-name">scroll</i></p>
+        <i className="fas fa-caret-down"></i>
       </div>
     </section>
   );

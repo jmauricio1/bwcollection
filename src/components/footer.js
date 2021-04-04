@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ArtistLink from './artist-link';
 
 import Info from './../img-info';
 
@@ -24,11 +25,7 @@ function Footer() {
           <p>
             {Info.map((element, index) => {
               return (
-                <span>
-                  {element.imgDesc} - 
-                  <a href={element.imgLink}> @{element.artistName}</a>
-                  <br />
-                </span>
+                <ArtistLink key={index} id={index} imgDesc={element.imgDesc} imgLink={element.imgLink} artistName={element.artistName}/>
               )
             })}
           </p>
