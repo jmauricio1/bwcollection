@@ -4,11 +4,14 @@ import boy from './../images/boy.jpg';
 import sitting2 from './../images/sitting2.jpg';
 import forest from './../images/forest.jpg';
 
+import linesLeft from './../shapes/lines left.svg';
+
 function Collection2(){
     return(
-        <section id="collection-2">
-            <img id="boy" className="scroll" src={boy} data-rate="-0.6"/>
+        <section className="sections">
+            <img id="boy" className="scroll position-absolute" src={boy} data-rate="-0.6"/>
             <img id="sitting2" className="scroll" src={sitting2} />
+            <img id="lines-left" className="position-absolute shape" src={linesLeft} />
             <img id="forest" src={forest}/>
         </section>
     )

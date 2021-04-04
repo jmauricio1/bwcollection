@@ -1,46 +1,11 @@
 import React, { useState } from "react";
-import ArtistLink from './artist-link';
-
-import Info from './../img-info';
+import About from './about';
 
 function Footer() {
-  const [showAbout, setShowAbout] = useState(false);
-
-  function handleAboutClick() {
-    setShowAbout(!showAbout);
-  }
 
   return (
-    <section id="footer">
-      <div
-        className="about-page"
-        style={{
-          width: showAbout ? "100%" : "0",
-          opacity: showAbout ? "1" : "0",
-          transition: "1s",
-        }}
-      >
-        <div className="about-info">
-          <h3>Support the artists and photographers on Unsplash</h3>
-          <p>
-            {Info.map((element, index) => {
-              return (
-                <ArtistLink key={index} id={index} imgDesc={element.imgDesc} imgLink={element.imgLink} artistName={element.artistName}/>
-              )
-            })}
-          </p>
-        </div>
-      </div>
-      <a
-        className="about"
-        style={{
-          WebkitTextStroke: showAbout ? "2px black" : "2px white",
-          position: showAbout ? "fixed" : "absolute",
-        }}
-        onClick={handleAboutClick}
-      >
-        ABOUT
-      </a>
+    <section id="footer" className="sections">
+      <About />
       <div className="footer-padding"></div>
     </section>
   );

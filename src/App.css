@@ -1,3 +1,5 @@
+/*---------- || APPLY TO ALL/MULTIPLE ----------*/
+
 body {
   background-color: #020202;
   background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
@@ -5,11 +7,31 @@ body {
 }
 
 h1 {
-  font-weight: 100;
   color: #f0f0f0;
-  margin: 0;
   font-size: 5rem;
+  font-weight: 100;
+  margin: 0;
 }
+
+img{
+  border-radius: 5px;
+  position: relative;
+}
+
+.sections{
+  position: relative;
+}
+
+.position-absolute{
+  position: absolute;
+}
+
+.shape{
+  opacity: 0.75;
+  z-index: -2;
+}
+
+/*---------- || TITLE SECTION ----------*/
 
 .heading-container {
   height: 20vh;
@@ -21,20 +43,16 @@ h1 {
   padding-bottom: 20vh;
 }
 
-.heading-container .fas {
+#caret {
   font-size: 3rem;
   color: white;
-  text-align: center;
   animation-name: bounce;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
-.scroll-name{
+#scroll-text{
   font-size: 2rem;
-}
-
-.heading-container p {
   color: white;
 }
 
@@ -53,14 +71,14 @@ h1 {
   }
 }
 
+/*---------- || COLLECTION 1 ----------*/
+
 #turtle {
-  position: relative;
   width: 62.5vw;
 }
 
 #statue {
   width: 41.67vw;
-  position: absolute;
   right: 0;
   z-index: 1;
   margin-top: 11vh;
@@ -69,27 +87,26 @@ h1 {
 #flower {
   width: 31.25vw;
   transform: rotate(180deg);
-  position: absolute;
   left: 15vw;
   margin-top: 64vh;
   z-index: 1;
 }
 
+#xs-vert{
+  left: 5vw;
+  width: 30vw;
+}
+
 #sitting {
   width: 100%;
-  position: relative;
   z-index: 0;
 }
 
-img {
-  border-radius: 10px;
-  /* box-shadow: 5px 5px 20px #1f1f1f; */
-}
+/*---------- || COLLECTION 2 ----------*/
 
 #boy {
   width: 52.08vw;
   height: auto;
-  position: absolute;
   right: 0;
   z-index: 1;
   margin-top: 170vh;
@@ -97,58 +114,64 @@ img {
 
 #sitting2 {
   width: 46.87vw;
-  position: relative;
   left: 5.2vw;
   top: -16vh;
   z-index: 2;
   margin-top: 32vh;
 }
 
+#lines-left{
+  width: 40vw;
+  right: 5vw;
+}
+
 #forest {
   width: 100%;
-  position: relative;
   z-index: 0;
 }
 
-#collection-2 {
-  position: relative;
+/*---------- || COLLECTION 3 ----------*/
+
+#plus{
+  width: 30vw;
+  right: 8vw;
 }
 
 #umbrella {
   width: 62.5vw;
-  position: relative;
   z-index: 1;
   margin-top: 21.34vh;
 }
 
-#section3 {
-  position: relative;
-}
-
 #mountain {
   width: 46.87vw;
-  position: absolute;
   right: 0;
   margin-top: 106.72vh;
 }
 
+#lines-right{
+  width: 30vw;
+  left: 15vw;
+  top: 60vh;
+}
+
 #building {
   width: 57.29vw;
-  position: relative;
   left: 5.2vw;
   z-index: -1;
   display: inline;
 }
 
-#footer {
-  width: 100%;
-  position: relative;
+#lines-horiz{
+  width: 30vw;
+  bottom: 70vh;
+  right: 0;
 }
 
+/*---------- || ABOUT ----------*/
+
 .about {
-  font-family: "Montserrat";
   color: black;
-  position: absolute;
   right: -0.5rem;
   bottom: 25vh;
   font-size: 10rem;
@@ -180,32 +203,39 @@ img {
 }
 
 .about-info {
-  position: absolute;
   width: 80vw;
   bottom: 20vh;
   padding-left: 1rem;
 }
 
-.about-info p {
+#list-of-artists {
   font-size: 2rem;
   line-height: 2rem;
 }
 
-.about-info a {
+.artist-link {
   color: black;
   text-decoration: none;
   font-weight: 900;
-  -webkit-transition: 1s ease;
+  -webkit-transition: 0.5s ease;
 }
 
-.about-info a:hover {
+.artist-link:hover {
   text-decoration: underline overline line-through;
-  color: grey;
+  opacity: 0.25;
+}
+
+/*---------- || FOOTER ----------*/
+
+#footer {
+  width: 100%;
 }
 
 .footer-padding {
   height: 5vh;
 }
+
+/*---------- || MEDIA QUERIES ----------*/
 
 @media (max-width: 1440px) {
   #umbrella {
@@ -219,10 +249,14 @@ img {
   .about {
     font-size: 7rem;
   }
+
+  #lines-right{
+    top: 40vh;
+  }
 }
 
 @media (max-width: 1024px) {
-  .page-heading {
+  h1 {
     font-size: 3rem;
   }
 
@@ -244,14 +278,14 @@ img {
 }
 
 @media (max-width: 812px) {
-  .about-info p {
+  #list-of-artists {
     font-size: 2rem;
     line-height: 2rem;
   }
 }
 
 @media (max-width: 768px) {
-  .page-heading {
+  h1 {
     font-size: 2.5rem;
   }
 
@@ -288,19 +322,31 @@ img {
     font-size: 4rem;
   }
 
-  .about-info p {
+  #list-of-artists {
     font-size: 1rem;
     line-height: 1rem;
   }
 
-  .heading-container .fas{
+  #caret{
     font-size: 2rem;
+  }
+
+  #lines-right{
+    top: 25vh;
+  }
+
+  #lines-horiz{
+    bottom: 40vh;
   }
 }
 
 @media (max-width: 480px) {
-  .page-heading {
+  h1 {
     font-size: 1rem;
+  }
+
+  h3{
+    font-size: 0.75rem;
   }
 
   #statue {
@@ -336,7 +382,16 @@ img {
     -webkit-text-stroke: 1px white;
   }
 
-  .scroll-name{
+  #scroll-text{
     font-size: .75rem;
+  }
+
+  #lines-right{
+    top: 15vh;
+  }
+
+  #lines-horiz{
+    bottom: 20vh;
+    width: 40vw;
   }
 }

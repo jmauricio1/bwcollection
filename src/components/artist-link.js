@@ -1,13 +1,16 @@
-import React from 'react';
+import React from "react";
 
-function ArtistLink(props){
+function ArtistLink(props) {
   return (
     <span>
-                  {props.imgDesc} - 
-                  <a href={props.imgLink}> @{props.artistName}</a>
-                  <br />
-                </span>
-  )
+      {props.imgDesc} -
+      <a href={props.imgLink} className="artist-link">
+        {" "}
+        @{props.artistName}
+      </a>
+      <br />
+    </span>
+  );
 }
 
 export default ArtistLink;

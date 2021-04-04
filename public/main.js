@@ -7,8 +7,6 @@ window.addEventListener("scroll", (e) => {
   var ratio = 1;
   var startingPos = 0;
 
-  //console.log(currentOffset);
-
   if (w <= 480) {
     startingPos = 800;
     ratio = 0.5;
@@ -24,28 +22,23 @@ window.addEventListener("scroll", (e) => {
   }
 
   //This for loop handles the position rate of the first 5 images on the web page
+  //depending on the screen size
   for (let i = 0; i < 5; i++) {
-    if (currentOffset > 100 && currentOffset < 3400) {
+    if (currentOffset > 0 && currentOffset < 3400) {
       //console.log(w);
-      let pos = (currentOffset - 100) * target[i].dataset.rate;
+      let pos = (currentOffset) * target[i].dataset.rate * ratio;
       target[i].style.transform =
-        "translate3d( 0px, " + pos * ratio + "px, 0px)";
+        "translate3d( 0px, " + pos + "px, 0px)";
     }
   }
 
-  //These conditional statements handle the position rate last handful of images
-  //depending on the screeen size
+  //These conditional statements handle the position rate of the last handful of images
+  //depending on the screen size
   for (let i = 5; i < target.length; i++) {
     if (currentOffset >= startingPos) {
-      let pos = (currentOffset - startingPos) * target[i].dataset.rate;
+      let pos = (currentOffset - startingPos) * target[i].dataset.rate * ratio;
       target[i].style.transform =
-        "translate3d( 0px, " + pos * ratio + "px, 0px)";
+        "translate3d( 0px, " + pos + "px, 0px)";
     }
   }
 });
-
-// window.onload = () =>{
-//   document.querySelector(".about").addEventListener("click", function(){
-//     document.querySelector(".about-page").style.width = "100%";
-//   });
-// }
